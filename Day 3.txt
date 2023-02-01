@@ -125,3 +125,9 @@ print(d)
 print(d.keys())
 print(d.values())
 print(d.items())
+print(d.get(1))
+
+li=['hi','hello']
+print(dict.fromkeys(li))
+d.setdefault(3,'three')
+print(d)
