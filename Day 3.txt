@@ -130,4 +130,5 @@ print(d.get(1))
 li=['hi','hello']
 print(dict.fromkeys(li))
 d.setdefault(3,'three')
+d.setdefault(4)
 print(d)
