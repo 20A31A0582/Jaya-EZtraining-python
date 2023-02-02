@@ -1,5 +1,0 @@
-print("hello i am saranya")
-print(chr(3126)+chr(3149)+chr(3120)+chr(3107))
-print(chr(3100)+chr(3119)+chr(3126)+chr(3149)+chr(3120)+chr(3149)+chr(3080))
-print(chr(3120)+chr(3149)+chr(3095))
-print(chr(3125)+chr(3136))
