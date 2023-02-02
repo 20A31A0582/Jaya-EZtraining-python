@@ -26,4 +26,20 @@ print(2*(a+b))
 print("Area:")
 print(a*b)
 
+#number game using random
+import random
+n=random.randrange(1,50)
+guess=int(input("Enter a number:"))
+while n!=guess:
+    if guess < n:
+        print("Too low")
+        guess = int(input("Enter number again:"))
+    elif guess > n:
+        print("too high")
+        guess =int(input("Enter number again"))
+    else:
+      break
+print("You guessed it right!!")
+               
+
 
