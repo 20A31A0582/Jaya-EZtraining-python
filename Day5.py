@@ -139,4 +139,34 @@ mul(n)
     
 #findout sum of digits of given number usinf func type 4
 
+#Recursive function -A function whihch calls itself
+
+'''def display():
+    n=int(input("Enter:"))
+    if n==1:
+        display()
+    else:
+        print("Over")
+display()
+
+#factorial using recursion
+def fact(n):
+    if n==0:
+        return 1
+    return n*fact(n-1)
+n=int(input("Enter a number:"))
+r=fact(n)
+print(r)'''
+
+n=int(input("Enter:"))
+a=0
+b=1
+s=0
+c=1
+while(c<=n):
+    print(s,end="")
+    c=c+1
+    a=b
+    b=s
+    s=a+b
 
