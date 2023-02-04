@@ -58,3 +58,34 @@ lenova.config()#accessing methods inside class
 
 dell=computer()
 dell.config()
+
+#Constructor in classes
+class Employee:
+    def __init__(self,name,age):#constructor 
+        self.name=name
+        self.age=age
+    def display(self):
+        print("Name:%s \n Age:%d"%(self.name,self.age))
+emp1=Employee("Jay",20)
+emp2=Employee("Pinky",20)
+
+emp1.display()
+emp2.display()
+
+class computer:
+    a=10#global scope
+    b=20
+    print("Class varaible inside class:",a)
+    def config(self):
+        c=100
+        print("Yes")
+        print("Instance acess",self.b)
+        print(c)#acessing variable inside the fuction
+lenova=computer()
+print(lenova.a)
+print(lenova.a+lenova.b)
+dell=computer()
+print("Dell",dell.a)
+lenova.config()
+dell.config()
+
