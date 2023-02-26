@@ -215,7 +215,57 @@ obj.insertatpos(3,100)
 obj.display()        
 
 
-
+#insertion at runtime
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+        
+class singlelinkedlist:
+    def __init__(self):
+        self.head=None
+        self.tail=None
+    def addNode(self, data):
+        if self.tail is None:
+            self.head = Node(data)
+            self.tail = self.head
+        else:
+            self.tail.next = Node(data)
+            self.tail = self.tail.next
+    def insert_beginning(self,data):
+        nb=Node(data)
+        nb.next=self.head
+        self.head=nb
+    def insert_Atend(self,data):
+        nb=Node(data)
+        temp=self.head
+        while temp.next:
+            temp=temp.next
+        temp.next=nb
+    def insertatpos(self,pos,data):
+        np=Node(data)
+        temp=self.head
+        for i in range(1,pos-1):
+            temp=temp.next
+        np.next=temp.next
+        temp.next=np
+    def display(self):
+        if self.head is None:
+            print("Linkedlist is empty")
+        else:
+            temp=self.head
+            while temp:
+                print(temp.data,"->")
+                temp=temp.next
+obj=singlelinkedlist()
+n = int(input('enter the number of elements in linked list : '))
+for i in range(n):
+    data=input("Enter data:")
+    obj.addNode(data)
+obj.insert_beginning("saranya")
+obj.insert_Atend("Hai")
+obj.insertatpos(3,100)
+obj.display()     
 
 
 
