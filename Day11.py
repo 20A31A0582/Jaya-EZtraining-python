@@ -1,4 +1,4 @@
-"""Binary Tree:A node can have maximum two children
+#Binary Tree:A node can have maximum two children
 class Node:
     def __init__(self,data):
         self.data=data
@@ -163,7 +163,7 @@ n2.left=n4
 n4.right=n5
 n3.left=n6
 n3.right=n7
-"""
+ 
 
 #implementation or insertion  of BST
  
@@ -311,12 +311,6 @@ def deleteNode(root, key):
 
 
 # Driver code
-""" Let us create following BST
-			50
-		/	 \
-		30	 70
-		/ \ / \
-	20 40 60 80 """
 
 root = None
 root = insert(root, 50)
@@ -345,5 +339,4 @@ root = deleteNode(root, 50)
 print("Inorder traversal of the modified tree")
 inorder(root)
 
-# This code is contributed by Nikhil Kumar Singh(nickzuck_007)
-
+ 
