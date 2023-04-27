@@ -146,3 +146,10 @@ CipherOutputStreamcout=new CipherOutputStream(fout,cipherOut);
 int input= 0;
 while((input=fin.read())!=-1){cout.write(input);}
 fin.close();cout.close(); }}
+
+
+
+
+Initialization Vector of the Cipher: dI1MXzW97oQ= 
+Contents of inputFile.txt: Hello World 
+Contents of outputFile.txt: ùJÖ˜ NåI“ 
