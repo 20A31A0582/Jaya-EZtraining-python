@@ -83,6 +83,7 @@ class dad:
         print("Dad class")
 class child(mom,dad)     :
         def cdisplay(self):
+            
             print("Child calss")
 c1=child()
 c1.cdisplay()
@@ -104,3 +105,44 @@ if t==1:
     print("Happy Number")
 else:
     print("NO")
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    import java.io.*;
+importjava.io.FileInputStream;
+importjava.io.FileOutputStream;
+importjava.security.Key;
+importjavax.crypto.Cipher;
+importjavax.crypto.CipherOutputStream;
+importjavax.crypto.KeyGenerator;
+import java.util.Base64.Encoder;
+public class BlowFish{
+public static void main(String[] args) throws Exception{
+//TODOcodeapplicationlogichere
+KeyGeneratorkeyGenerator=KeyGenerator.getInstance("Blowfish");
+keyGenerator.init(128);
+Key secretKey=keyGenerator.generateKey();
+Cipher cipherOut=Cipher.getInstance("Blowfish/CFB/NoPadding");
+cipherOut.init(Cipher.ENCRYPT_MODE, secretKey); 
+Encoder encoder=new Encoder();
+byte iv[]=cipherOut.getIV();
+if (iv!=null)
+{
+System.out.println("InitializationVectoroftheCipher:"+encoder.encode(iv)); 
+}
+FileInputStream fin = new FileInputStream("inputFile.txt");
+FileOutputStreamfout = new FileOutputStream("outputFile.txt");
+CipherOutputStreamcout=new CipherOutputStream(fout,cipherOut);
+int input= 0;
+while((input=fin.read())!=-1){cout.write(input);}
+fin.close();cout.close(); }}
